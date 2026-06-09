@@ -11,10 +11,17 @@ int main(int argc, char** argv[]) {
 		printf("\n");
 
 		char buffer[MAX_LENGTH];
+		char* status;
+start:
 		printf("\nmyshell>");
-		scanf("%s", &buffer);
-		printf("%s", buffer);
-		printf("\nmyshell>");
+		fgets(buffer, sizeof(buffer), stdin);
+		if(status != NULL){
+				printf("%s", buffer);
+				goto start;
+		}
+		else{
+				goto start;
+		}
 
 		return 0;
 
