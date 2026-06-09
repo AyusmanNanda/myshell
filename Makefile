@@ -1,6 +1,8 @@
 shell:
-	gcc -o main -c src/main.c
+	gcc -o myshell src/main.c
+	chmod +x ./myshell
+	./myshell
 
 clean:
-	rm -r src/main
+	rm -r myshell
 
