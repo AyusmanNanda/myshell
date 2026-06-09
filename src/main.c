@@ -14,13 +14,14 @@ int main(int argc, char** argv[]) {
 		char* status;
 start:
 		printf("\nmyshell>");
-		fgets(buffer, sizeof(buffer), stdin);
+		status = fgets(buffer, sizeof(buffer), stdin);
 		if(status != NULL){
 				printf("%s", buffer);
 				goto start;
 		}
 		else{
-				goto start;
+				printf("Bye :)");
+				exit(1);
 		}
 
 		return 0;
