@@ -1,5 +1,5 @@
 shell:
-	gcc -o myshell src/main.c
+	gcc -o myshell src/main.c src/input.c
 	chmod +x ./myshell
 	./myshell
 
