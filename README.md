@@ -3,7 +3,7 @@ Experimenting with a Unix-like shell in C
 ## Input System
 - [x] Read command line
 - [x] Handle EOF
-- [ ] Handle empty input
+- [x] Handle empty input
 
 ## Parsing
 - [ ] Tokenize command line
