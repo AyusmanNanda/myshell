@@ -22,7 +22,7 @@ int input(int argc, char* argv[]) {
 		printf("\nWelcome to myshell! :)");
 		printf("\nPress ctrl + d to exit.");
 		for(int i = 1; i < argc; i++) {
-				printf("%s", argv[i]);
+				printf("\n%s", argv[i]);
 		}
 		char buffer[MAX_LENGTH];
 		char* status;
